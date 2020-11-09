@@ -53,7 +53,7 @@ function calculateMultPowerSynergy() {
   let yourmom = nD(1.1)
 
 	const level = game.multipliers.synergy.level
-	const idk = calculateSynergyCapDelay().times(150)
+	const idk = new ExpantaNum(Infinity) //calculateSynergyCapDelay().times(150) //hope this works lao
 
   if (milestonesCompleted() >= 14 && level.gte(50)) {
     if (level.lte(idk)) yourmom = yourmom.plus(level.minus(49).times(0.01))
